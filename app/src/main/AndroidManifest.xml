@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.loveb.securemessenger">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_verified_user_white_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AES"
+            android:label="Advanced Encryption"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity android:name=".DES"
+            android:label="Data Encryption"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RSA"
+            android:label="RS Encryption"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MD5"
+            android:label="MD5 Algorithm"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Resetpassword"
+            android:label="Set a new password"
+            android:parentActivityName=".AES"></activity>
+    </application>
+
+</manifest>
